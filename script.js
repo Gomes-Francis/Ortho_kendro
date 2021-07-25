@@ -49,7 +49,10 @@ withdrawBtn.addEventListener("click",function(){
   // const withdrawAmount = document.getElementById("withdrawAmount").value
   // const withdrawNumber = parseFloat(withdrawAmount)
    const withdrawNumber = getInputNumber("withdrawAmount")
-   console.log(withdrawNumber);
+   updateSpanText("currentWithdraw", withdrawNumber)
+   //balance theke jeno withdraw badh jai tar jonno same function e thakbe, kintu jehetu minus hobe ty -1 diye multiply(*) korte hobe
+   updateSpanText("currentBalance", -1 * withdrawNumber)
+   document.getElementById("withdrawAmount").value =""
 })
 // jehetu, depositNumber, withdrawNumber, currentNumber, 3tai parseFloat korte hocche, ty ekhane akta function kora jete pare
 function getInputNumber(id){
