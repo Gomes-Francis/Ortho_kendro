@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Eastern Bank</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div id="login-area" class="text-center">
+      <h1 class="text-center big_font">Welcome to Eastern Bank</h1>
+      <div class="submit-area">
+        <h4>Login</h4>
+        <input type="text" placeholder="Email" class="form-control"/>
+        <br>
+        <input type="password" placeholder="Password" class="form-control"/>
+        <br>
+        <button id="login" class="btn btn-success">Enter</button>
+      </div>
+    </div>
+    <div id="transaction-area">
+      <!-- <h1>Transaction Area</h1> -->
+      <!-- kintu "h1" ta akhon show kortese, aita hide korte hobe, button a jokhon click korbo tokhon aita ashbe, ty css a giye age "display: none" kore dite hobe, r js a jokhon aita khuje ber korbo tokhon jeno aita abar show kore tokhon "display: block" dite hobe -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="deposit">
+            <h5>Deposit</h5>
+            <h2>$ <span id="currentDeposit">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdrawn">
+            <h5>Withdrawn</h5>
+            <h2>$ 00</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="balance">
+            <h5>Balance</h5>
+            <h2>$ <span id="currentBalance">1240</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- .row>.col-md-6*2>h4+input:text+btn.btn.btn-success -->
+        <div class="col-md-6">
+          <div class="border-design">
+            <h4>Deposit</h4>
+            <input id="depositAmount" type="text" class="form-control" placeholder="$ amount you want to deposit"/>
+            <br>
+            <button id="addDeposit" class="btn btn-success">Deposit</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="border-design">
+            <h4>Withdrawn</h4>
+            <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount you want to withdrawn"/>
+            <br>
+            <button id="addWithdraw" class="btn btn-success">Withdrawn</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

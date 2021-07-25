@@ -1,0 +1,52 @@
+body{
+    /* background-image: url("https://4.bp.blogspot.com/-_augqHSd_Hk/V6x7GWmyPFI/AAAAAAAAEBI/kGBAUuaXzPwzux5S_dJsa-NS8IWMpkrmwCLcB/s320/eastern-bank-limited.jpg"); */
+    padding: 100px;
+}
+.submit-area{
+    background-color: rgb(252, 187, 47);
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    //10px ta hocche kototuku chorabe
+}
+#transaction-area{
+    display: none;
+}
+.big_font{
+    background-color: rgb(239, 252, 128);
+    display: inline-block;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.deposit{
+    background-color: slateblue;
+    margin: 0 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.withdrawn{
+    background-color: lightsalmon;
+    margin: 0 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.balance{
+    background-color: orange;
+    margin: 0 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.border-design{
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    //10px ta hocche kototuku chorabe
+}
